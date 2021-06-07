@@ -148,7 +148,44 @@ background-color: crimson;
     background-image: url(./img/img-1.png);
     background-size: cover;
     margin: 10px 5px;
+    z-index: 1;
 } 
+#services .services-item::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  widows: 100%;
+background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+
+  opacity: .8;
+  z-index: -1;  
+}
+#sevices .col-right .icon{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    }
+#services .service-item h2{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#services .service-item p{
+    color: white;
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    
+}
 /*End services section */
 /* keyframes */
 @keyframes text_reveal_box{
